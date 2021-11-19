@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script defer type="module" src="js/validadoreitor.js"></script>
+
+</head>
+
+<body class="bg-secondary bg-opacity-25">
+  <div class="container-fluid w-75 mt-4">
+
+    <h1>Contacta con nosotros</h1>
+
+    <div class="mb-4" id="enviando"></div>
+
+    <form name="formu" method="post" action="https://www.w3schools.com/action_page.php" id="formu">
+      <fieldset class=" form-group">
+        <label for="nombre">Nombre</label>
+        <input class="form-control shadow-sm" type="text" id="nombre" name="nombre" value="Perico de los Palotes"
+          placeholder="Tu nombre">
+        <smalll class="text-muted" id="mostra_nombre">Escribe tu nombre de verdad</smalll>
+      </fieldset>
+
+      <fieldset class=" form-group">
+        <label for="apellido">Apellidos</label>
+        <input class="form-control shadow-sm" type="text" id="apellido" name="apellido" value="Serrano"
+          placeholder="Tu nombre">
+        <smalll class="text-muted" id="mostra_apellido">Escribe tu apellido de verdad</smalll>
+      </fieldset>
+
+
+
+      <fieldset class=" form-group">
+        <label for="telf">Teléfono</label>
+        <input class="form-control shadow-sm" type="text" id="telf" name="telf" value="65212364"
+          placeholder="Tu teléfono">
+        <smalll class="text-muted" id="mostra_telf">Escribe un teléfono donde poder llamarte</smalll>
+      </fieldset>
+
+      <fieldset class=" form-group">
+        <label for="email">Dirección de email</label>
+        <input class="form-control shadow-sm" type="text" id="email" name="email" value="test@test.com"
+          placeholder="test@gmail.com">
+        <smalll class="text-muted" id="mostra_email">Escribe tu email correctamente</smalll>
+      </fieldset>
+
+
+      <!-- EDITING HERE -->
+      <fieldset class=" form-group">
+        <label for="fecha">Fecha de nacimiento</label>
+        <input class="form-control shadow-sm" type="date" id="fecha" name="fecha"
+          placeholder="el día en que te parieron">
+        <smalll class="text-muted" id="mostra_fecha">Escribe la fecha en que te trajeron al mundo.</smalll>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="asunto">Asunto</label>
+        <input class="form-control shadow-sm" type="text" id="asunto" name="asunto"
+          placeholder="Asunto del que se trata" value="El asunto del tema">
+        <smalll class="text-muted" id="mostra_asunto">Escribe el asunto sin añadir números</smalll>
+      </fieldset>
+      <fieldset>
+        <label for="contenido">¿Qué te gustaría preguntarnos?</label>
+        <textarea class="form-control shadow-sm" id="contenido" name="contenido" rows="3"></textarea>
+        <small class="text-muted" id="mostra_contenido">Pregunta sin miedo</small>
+      </fieldset>
+      <div class="mt-4 position-relative">
+
+        <input type="reset" class="btn btn-danger shadow-sm" id="reset">
+        <input class="btn btn-primary shadow-sm" type="submit" name="enviar" id="enviar">
+        <div class="spinner-border visually-hidden position-absolute top-0 start-50">
+
+        </div>
+
+
+        <div class="mt-4">
+
+          <button type="button" name="test" id="test" class="btn btn-info" title="sólo con fines de testeo">Test
+            checking button</button>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+
+</body>
+
+</html>

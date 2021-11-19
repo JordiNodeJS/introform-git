@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>form</title>
+</head>
+
+<body class="bg-secondary bg-opacity-75">
+
+    <div class="container-fluid w-75 mt-5">
+        <h1>Probando el submit</h1>
+        <form name="formu" action="https://www.w3schools.com/action_page.php">
+            <label for="test">
+                <input type="text" name="test" id="test" value="testing this form">
+            </label>
+            <input class="btn btn-info" type="submit" value="Send">
+        </form>
+    </div>
+
+    <script>
+        const form = document.formu
+
+        // form.addEventListener('submit', (e) => {
+        //     // e.preventDefault()
+        //     alert('submit')
+        // })
+
+        form.test.addEventListener('submit', (e) => {
+            e.preventDefault()
+            alert('submit')
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

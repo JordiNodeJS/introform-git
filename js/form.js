@@ -1,0 +1,22 @@
+const form = {
+  formu: document.formu,
+  nombre: document.formu.nombre,
+  apellido: document.formu.apellido,
+  telf: document.formu.telf,
+  email: document.formu.email,
+  fecha: document.formu.fecha,
+  asunto: document.formu.asunto,
+  contenido: document.formu.contenido,
+  test: document.querySelector('#test'),
+  reset: document.querySelector('#reset'),
+  enviar: document.querySelector('#enviar'),
+  enviando: document.querySelector('#enviando'),
+  mostra_nombre: document.querySelector('#mostra_nombre'),
+  mostra_apellido: document.querySelector('#mostra_apellido'),
+  mostra_telf: document.querySelector('#mostra_telf'),
+  mostra_email: document.querySelector('#mostra_email'),
+  mostra_fecha: document.querySelector('#mostra_fecha'),
+  mostra_asunto: document.querySelector('#mostra_asunto'),
+  mostra_contenido: document.querySelector('#mostra_contenido'),
+};
+export default form;
