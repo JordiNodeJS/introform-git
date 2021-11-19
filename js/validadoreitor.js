@@ -69,15 +69,16 @@ function styling(booleano, msg, [campo, mostra]) {
 }
 
 const listeners = [
+  form.fecha,
   form.nombre,
   form.apellido,
   form.email,
-  form.fecha,
   form.telf,
   form.asunto,
   form.contenido,
 ];
 for (const listener of listeners) listener.addEventListener('keyup', validar);
+listeners[0].addEventListener('click', validar);
 
 form.formu.addEventListener('submit', event => {
   event.preventDefault();
