@@ -80,9 +80,18 @@ const listeners = [
 for (const listener of listeners) listener.addEventListener('keyup', validar);
 listeners[0].addEventListener('click', validar);
 
+// evito que se envíe el formulario sin validad
 form.formu.addEventListener('submit', event => {
   event.preventDefault();
-  if (!mail() || !asunto() || !contenido())
+  if (
+    !nombre() ||
+    !apellido() ||
+    !mail() ||
+    !asunto() ||
+    !contenido() ||
+    !telf() ||
+    !fecha()
+  )
     styling(false, msg.error.toLocaleUpperCase(), [enviando, enviando]);
   else {
     styling(true, msg.enviando.toLocaleUpperCase(), [enviando, enviando]);
